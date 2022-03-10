@@ -1,16 +1,19 @@
 ## Homework | Week 2
 
-Elimizde bir kitap listesi var. Bu uygulamanın 2 görevi var.
-1. Uygulama içerisindeki tüm kitapları çıktı olarak göstermek.
-2. Girdi olarak verilen kitap ismini varsa ekrana bastırmak yok ise kitabın mevcut olmadığına dair çıktı yazdırmak.
+## Book List Project
+
+In this project. We can see all books' name and check the names if they are available.
 
 ### list command
 ```
 go run main.go list
 ```
-Bu komut ile uygulama içerisindeki tüm kitapları çıktı olarak görmek istiyoruz.
+Using this command, we can see all books' name on the terminal
 
 ### search command 
 ```
 go run main.go search <bookName>
-go run main.go search Lord of the Ring: The Return of 
+go run main.go search Nutuk
+```
+Using this command, we can check if the book is available.
+
