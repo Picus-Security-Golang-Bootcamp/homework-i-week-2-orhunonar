@@ -8,23 +8,23 @@ import (
 
 func main() {
 
-	args := os.Args[1:]
+	args := os.Args[1:] //Take string from terminal as an input
 	realstring := strings.Join(args, " ")
-	newrealstring := strings.Split(realstring, " ")
+	newrealstring := strings.Split(realstring, " ") //Make array
 
-	booklist := []string{
+	booklist := []string{ //Book List
 		"Brain",
 		"1984",
 		"Silmarillion",
 		"Drive",
 		"Nutuk",
 	}
-	if newrealstring[0] == "list" {
+	if newrealstring[0] == "list" { // Show the Book List
 		for i := 0; i < len(booklist); i++ {
 			fmt.Println(booklist[i])
 		}
 
-	} else if newrealstring[0] == "search" {
+	} else if newrealstring[0] == "search" { //Search Algorithm
 
 		for i := 0; i < len(booklist); i++ {
 			if newrealstring[1] == booklist[i] {
