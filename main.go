@@ -28,11 +28,11 @@ func main() {
 
 		for i := 0; i < len(booklist); i++ {
 			if newrealstring[1] == booklist[i] {
-				fmt.Println(booklist[i], " isimli kitap listede mevcuttur")
+				fmt.Println(booklist[i], " is valid on the list")
 				break
 			}
 			if len(booklist) == i+1 {
-				fmt.Println("Kitap listede mevcut değildir")
+				fmt.Println("The book is not valid")
 			}
 
 		}
